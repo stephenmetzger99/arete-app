@@ -4,7 +4,7 @@ import ButtonGroup from '~/buttongroup/buttongroup';
 const formulaChoiceProps = ["Harris-Benedict", "Mifflin-St Jeor"];
 const sexChoiceProps = ["Male","Female"]
 
-const Bmr = () => {
+const BmrForm = () => {
 
     const [weight, setWeight] = useState('');
     const [height, setHeight] = useState('');
@@ -67,7 +67,7 @@ const Bmr = () => {
               type="number"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
-              className="border p-2 w-full"
+              className="arete-input"
             />
           </div>
           <div className="mb-2">
@@ -76,7 +76,7 @@ const Bmr = () => {
               type="number"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
-              className="border p-2 w-full"
+              className="arete-input"
             />
           </div>
           <div className="mb-2">
@@ -85,7 +85,7 @@ const Bmr = () => {
               type="number"
               value={age}
               onChange={(e) => setAge(e.target.value)}
-              className="border p-2 w-full"
+              className="arete-input"
             />
           </div>
           <ButtonGroup choices={sexChoiceProps} selected={sexChoice} onChange={setSexChoice}></ButtonGroup>
@@ -100,4 +100,4 @@ const Bmr = () => {
       );
     };
     
-    export default Bmr;
+    export default BmrForm;

@@ -4,7 +4,7 @@ import ButtonGroup from '~/buttongroup/buttongroup';
 const choiceProps = ["Brzycki", "Epley", "Lander"];
 
 
-const OneRepMax = () => {
+const OneRepMaxForm = () => {
 
     const [weight, setWeight] = useState('');
     const [reps, setReps] = useState('');
@@ -55,7 +55,7 @@ const OneRepMax = () => {
               type="number"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
-              className="border p-2 w-full"
+              className="arete-input"
             />
           </div>
           <div className="mb-2">
@@ -64,7 +64,7 @@ const OneRepMax = () => {
               type="number"
               value={reps}
               onChange={(e) => setReps(e.target.value)}
-              className="border p-2 w-full"
+              className="arete-input"
             />
           </div>
           
@@ -77,4 +77,4 @@ const OneRepMax = () => {
       );
     };
     
-    export default OneRepMax;
+    export default OneRepMaxForm;

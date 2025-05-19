@@ -13,3 +13,7 @@ body {
     color-scheme: dark;
   }
 }
+
+.arete-input{
+  @apply border border-gray-400 rounded w-full p-2;
+}
